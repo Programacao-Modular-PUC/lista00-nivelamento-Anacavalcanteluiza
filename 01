@@ -1,0 +1,26 @@
+
+package questão01;
+
+import java.util.Scanner;
+
+
+public class Questão01 {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        
+        int num, fatorial = 1;
+        
+        System.out.println("Informe um valor inteiro: ");
+        num = entrada.nextInt();
+        
+        for(int i = num; i >= 1; i--){
+            
+          fatorial *= i; 
+        }
+        
+        System.out.println("O valor do fatorial de: " + num + " = " + fatorial); 
+
+    }
+    
+}
